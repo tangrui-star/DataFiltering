@@ -45,12 +45,15 @@ const processExcel = () => {
   data.forEach((row) => {
     const product = row['商品'];
     const category = row['分类'];
-    const quantity = row['数量'];
+    const quantity = Number(row['数量']);
 
     const key = `${product} - ${category}`;
+    if(product === "玫瑰乳扇荔枝素贝果(生重120克左右)"){
+      console.log("玫瑰乳扇荔枝素贝果(生重120克左右)"+quantity);
+    }
     if (!productSales[key]) {
       productSales[key] = 0;
-    }
+    }    
     productSales[key] += quantity;
   });
 
