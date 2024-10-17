@@ -10,9 +10,9 @@ import HelloWorld from './components/HelloWorld.vue'
   </header>
   <main>
     <!-- 左侧导航栏 -->
-    <div>左侧导航栏</div>
+    <div></div>
     <!-- 主内容区 -->
-    <div>主内容区</div>
+    <div></div>
   </main>
 </template>
 
