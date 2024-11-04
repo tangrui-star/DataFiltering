@@ -1,0 +1,63 @@
+/* 页面整体样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 设置 header 样式，内容居中 */
+  header {
+    background-color: #f8f8f8;
+    padding: 0 0 5px 0;
+  }
+  
+  .wrapper {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 主体部分布局 */
+  main {
+    display: flex;
+    min-height: 100vh;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 1rem 0 0 0;
+    gap: 1rem;
+  }
+  
+  /* 左侧导航栏 */
+  main > div:first-child {
+    flex: 1;
+    max-width: 250px; /* 固定最大宽度 */
+    background-color: #e9ecef;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-y: auto;
+  }
+  
+  /* 主内容区 */
+  main > div:last-child {
+    flex: 3; /* 占据剩余空间 */
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-y: auto;
+  }
+  
+  /* 响应式布局 */
+  @media (max-width: 768px) {
+    /* 主体部分在小屏幕下调整为垂直布局 */
+    main {
+      flex-direction: column;
+    }
+  
+    /* 左侧导航栏和主内容区占满宽度 */
+    main > div {
+      max-width: 100%;
+    }
+  }
+  

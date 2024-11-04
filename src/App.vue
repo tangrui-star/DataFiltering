@@ -1,18 +1,25 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue';
+import LeftAside from './components/LeftAside.vue';
+import './assets/styles/comman.css'
 </script>
 
 <template>
   <header>
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <div class="wrapper">    
+      <Header></Header>
     </div>
   </header>
   <main>
     <!-- 左侧导航栏 -->
-    <div></div>
+    <div> 
+      <LeftAside></LeftAside>
+    </div>
     <!-- 主内容区 -->
-    <div></div>
+    <div>
+      <HelloWorld msg="You did it!" />
+    </div>
   </main>
 </template>
 
